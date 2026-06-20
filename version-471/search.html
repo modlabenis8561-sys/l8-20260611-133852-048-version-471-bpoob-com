@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索片库 - 高清亚洲视频</title>
+    <meta name="description" content="搜索高清亚洲视频片库，可按影片标题、地区、类型、年份和标签筛选内容。">
+    <meta name="keywords" content="高清亚洲视频,免费视频影视,沉浸式观影,高清流畅,手机播放,电脑播放,亚洲影视,在线影视,免费观看,影视资源">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="./index.html" class="brand" aria-label="高清亚洲视频">
+                <span class="brand-mark">▶</span>
+                <span class="brand-text">高清亚洲视频</span>
+            </a>
+            <nav class="nav-links" aria-label="主导航">
+                <a href="./index.html" class="nav-link">首页</a>
+                <a href="./movies.html" class="nav-link">全部影片</a>
+                <a href="./categories.html" class="nav-link">分类</a>
+                <a href="./rankings.html" class="nav-link">排行榜</a>
+                <a href="./search.html" class="nav-link">搜索</a>
+            </nav>
+            <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" aria-label="移动端导航">
+                <a href="./index.html" class="mobile-nav-link">首页</a>
+                <a href="./movies.html" class="mobile-nav-link">全部影片</a>
+                <a href="./categories.html" class="mobile-nav-link">分类</a>
+                <a href="./rankings.html" class="mobile-nav-link">排行榜</a>
+                <a href="./search.html" class="mobile-nav-link">搜索</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container page-title">
+                <h1>搜索片库</h1>
+                <p>输入影片名、题材、地区或年份，快速找到想看的内容。</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="container">
+                <form class="toolbar" data-search-form>
+                    <input type="search" name="keyword" placeholder="搜索影片、标签、剧情关键词" aria-label="搜索关键词">
+                    <select name="region" aria-label="选择地区">
+                        <option value="">全部地区</option>
+                    <option value="中东/美国合拍">中东/美国合拍</option>
+                    <option value="中国">中国</option>
+                    <option value="中国 / 马来西亚">中国 / 马来西亚</option>
+                    <option value="中国内地">中国内地</option>
+                    <option value="中国内地 / 美国">中国内地 / 美国</option>
+                    <option value="中国台湾">中国台湾</option>
+                    <option value="中国台湾/香港">中国台湾/香港</option>
+                    <option value="中国大陆">中国大陆</option>
+                    <option value="中国大陆 / 中国台湾">中国大陆 / 中国台湾</option>
+                    <option value="中国大陆 / 中国香港">中国大陆 / 中国香港</option>
+                    <option value="中国大陆 / 以色列">中国大陆 / 以色列</option>
+                    <option value="中国大陆 / 法国">中国大陆 / 法国</option>
+                    <option value="中国大陆 / 波兰">中国大陆 / 波兰</option>
+                    <option value="中国大陆 / 蒙古">中国大陆 / 蒙古</option>
+                    <option value="中国大陆 / 香港">中国大陆 / 香港</option>
+                    <option value="中国澳门 / 中国大陆">中国澳门 / 中国大陆</option>
+                    <option value="中国香港">中国香港</option>
+                    <option value="中国香港 / 中国大陆">中国香港 / 中国大陆</option>
+                    <option value="中国香港 / 台湾">中国香港 / 台湾</option>
+                    <option value="中国香港 / 马来西亚">中国香港 / 马来西亚</option>
+                    <option value="中国香港/中国大陆">中国香港/中国大陆</option>
+                    <option value="中国香港/法国">中国香港/法国</option>
+                    <option value="丹麦">丹麦</option>
+                    <option value="以色列">以色列</option>
+                    <option value="伊朗">伊朗</option>
+                    <option value="俄罗斯">俄罗斯</option>
+                    <option value="冰岛">冰岛</option>
+                    <option value="加拿大">加拿大</option>
+                    <option value="北欧（虚构）">北欧（虚构）</option>
+                    <option value="华语">华语</option>
+                    <option value="南非">南非</option>
+                    <option value="印度">印度</option>
+                    <option value="印度 / 英国">印度 / 英国</option>
+                    <option value="叙利亚 / 法国">叙利亚 / 法国</option>
+                    <option value="古巴">古巴</option>
+                    <option value="台湾">台湾</option>
+                    <option value="哥伦比亚">哥伦比亚</option>
+                    <option value="土耳其">土耳其</option>
+                    <option value="埃及 / 叙利亚">埃及 / 叙利亚</option>
+                    <option value="塞尔维亚/波黑">塞尔维亚/波黑</option>
+                    <option value="墨西哥">墨西哥</option>
+                    <option value="奥地利">奥地利</option>
+                    <option value="巴勒斯坦">巴勒斯坦</option>
+                    <option value="巴勒斯坦/以色列">巴勒斯坦/以色列</option>
+                    <option value="巴西">巴西</option>
+                    <option value="希腊">希腊</option>
+                    <option value="希腊/法国">希腊/法国</option>
+                    <option value="德国">德国</option>
+                    <option value="德国 / 挪威">德国 / 挪威</option>
+                    <option value="德国 / 美国">德国 / 美国</option>
+                    <option value="德国/以色列">德国/以色列</option>
+                    <option value="意大利">意大利</option>
+                    <option value="意大利 / 梵蒂冈">意大利 / 梵蒂冈</option>
+                    <option value="意大利 / 法国">意大利 / 法国</option>
+                    <option value="挪威">挪威</option>
+                    <option value="新加坡/中国大陆">新加坡/中国大陆</option>
+                    <option value="新西兰">新西兰</option>
+                    <option value="日本">日本</option>
+                    <option value="日本 / 美国">日本 / 美国</option>
+                    <option value="日本/中国大陆">日本/中国大陆</option>
+                    <option value="朝鲜">朝鲜</option>
+                    <option value="欧洲">欧洲</option>
+                    <option value="欧美">欧美</option>
+                    <option value="欧美/合拍">欧美/合拍</option>
+                    <option value="法国">法国</option>
+                    <option value="法国 / 以色列">法国 / 以色列</option>
+                    <option value="法国 / 德国">法国 / 德国</option>
+                    <option value="法国 / 意大利">法国 / 意大利</option>
+                    <option value="法国 / 比利时">法国 / 比利时</option>
+                    <option value="法国 / 美国">法国 / 美国</option>
+                    <option value="法国/比利时">法国/比利时</option>
+                    <option value="波兰">波兰</option>
+                    <option value="波兰 / 捷克">波兰 / 捷克</option>
+                    <option value="泰国">泰国</option>
+                    <option value="泰国 / 美国">泰国 / 美国</option>
+                    <option value="澳大利亚">澳大利亚</option>
+                    <option value="瑞典">瑞典</option>
+                    <option value="瑞典 / 挪威">瑞典 / 挪威</option>
+                    <option value="瑞士">瑞士</option>
+                    <option value="缅甸/中国">缅甸/中国</option>
+                    <option value="罗马尼亚">罗马尼亚</option>
+                    <option value="美国">美国</option>
+                    <option value="美国 / 中国大陆">美国 / 中国大陆</option>
+                    <option value="美国 / 加拿大">美国 / 加拿大</option>
+                    <option value="美国 / 墨西哥">美国 / 墨西哥</option>
+                    <option value="美国 / 巴西">美国 / 巴西</option>
+                    <option value="美国 / 意大利">美国 / 意大利</option>
+                    <option value="美国 / 法国">美国 / 法国</option>
+                    <option value="美国 / 澳大利亚">美国 / 澳大利亚</option>
+                    <option value="美国 / 英国">美国 / 英国</option>
+                    <option value="美国 / 越南">美国 / 越南</option>
+                    <option value="美国 / 韩国">美国 / 韩国</option>
+                    <option value="美国/中国大陆">美国/中国大陆</option>
+                    <option value="美国/加拿大">美国/加拿大</option>
+                    <option value="美国/德国">美国/德国</option>
+                    <option value="美国，越南">美国，越南</option>
+                    <option value="肯尼亚">肯尼亚</option>
+                    <option value="芬兰">芬兰</option>
+                    <option value="芬兰 / 美国">芬兰 / 美国</option>
+                    <option value="苏联 / 东德">苏联 / 东德</option>
+                    <option value="英国">英国</option>
+                    <option value="英国 / 中国">英国 / 中国</option>
+                    <option value="英国 / 加拿大">英国 / 加拿大</option>
+                    <option value="英国 / 德国">英国 / 德国</option>
+                    <option value="英国 / 新西兰">英国 / 新西兰</option>
+                    <option value="英国 / 法国">英国 / 法国</option>
+                    <option value="英国 / 澳大利亚">英国 / 澳大利亚</option>
+                    <option value="英国 / 爱尔兰">英国 / 爱尔兰</option>
+                    <option value="英国 / 美国">英国 / 美国</option>
+                    <option value="英国/俄罗斯">英国/俄罗斯</option>
+                    <option value="英国/美国">英国/美国</option>
+                    <option value="荷兰 / 法国">荷兰 / 法国</option>
+                    <option value="菲律宾">菲律宾</option>
+                    <option value="蒙古 / 中国">蒙古 / 中国</option>
+                    <option value="西班牙">西班牙</option>
+                    <option value="西班牙 / 墨西哥">西班牙 / 墨西哥</option>
+                    <option value="西班牙 / 法国">西班牙 / 法国</option>
+                    <option value="西班牙 / 英国">西班牙 / 英国</option>
+                    <option value="西班牙 / 阿根廷">西班牙 / 阿根廷</option>
+                    <option value="西班牙/古巴">西班牙/古巴</option>
+                    <option value="跨国（美国 / 摩洛哥）">跨国（美国 / 摩洛哥）</option>
+                    <option value="阿富汗/伊朗">阿富汗/伊朗</option>
+                    <option value="阿根廷/西班牙">阿根廷/西班牙</option>
+                    <option value="韩国">韩国</option>
+                    <option value="韩国 / 中国">韩国 / 中国</option>
+                    <option value="香港">香港</option>
+                    <option value="香港 / 中国">香港 / 中国</option>
+                    <option value="香港 / 日本">香港 / 日本</option>
+                    <option value="香港/中国大陆">香港/中国大陆</option>
+                    <option value="马来西亚">马来西亚</option>
+                    <option value="马来西亚 / 新加坡">马来西亚 / 新加坡</option>
+                    </select>
+                    <select name="type" aria-label="选择类型">
+                        <option value="">全部类型</option>
+                    <option value="Movie">Movie</option>
+                    <option value="TV Serie">TV Serie</option>
+                    <option value="TV Series">TV Series</option>
+                    <option value="TV剧集">TV剧集</option>
+                    <option value="TV动画">TV动画</option>
+                    <option value="剧场版 / 动画">剧场版 / 动画</option>
+                    <option value="剧情片">剧情片</option>
+                    <option value="剧集">剧集</option>
+                    <option value="剧集 (30集)">剧集 (30集)</option>
+                    <option value="剧集 / 动画">剧集 / 动画</option>
+                    <option value="剧集 剧情, 历史">剧集 剧情, 历史</option>
+                    <option value="动态漫画">动态漫画</option>
+                    <option value="动漫">动漫</option>
+                    <option value="动画">动画</option>
+                    <option value="动画 / 剧集">动画 / 剧集</option>
+                    <option value="动画 / 电视剧">动画 / 电视剧</option>
+                    <option value="动画 / 短片集">动画 / 短片集</option>
+                    <option value="动画剧集">动画剧集</option>
+                    <option value="动画电影">动画电影</option>
+                    <option value="动画短片">动画短片</option>
+                    <option value="演唱会电影">演唱会电影</option>
+                    <option value="演唱会纪实">演唱会纪实</option>
+                    <option value="特别篇">特别篇</option>
+                    <option value="电影">电影</option>
+                    <option value="电影 (动画)">电影 (动画)</option>
+                    <option value="电影 / 动画">电影 / 动画</option>
+                    <option value="电影 / 纪录片">电影 / 纪录片</option>
+                    <option value="电影 / 综艺">电影 / 综艺</option>
+                    <option value="电影 剧情/社会">电影 剧情/社会</option>
+                    <option value="电影 犯罪, 悬疑">电影 犯罪, 悬疑</option>
+                    <option value="电影/动画">电影/动画</option>
+                    <option value="电影/爱情恐怖">电影/爱情恐怖</option>
+                    <option value="电影/纪录片">电影/纪录片</option>
+                    <option value="电影纪录片">电影纪录片</option>
+                    <option value="电视剧">电视剧</option>
+                    <option value="电视剧 (30集)">电视剧 (30集)</option>
+                    <option value="电视剧 (短剧)">电视剧 (短剧)</option>
+                    <option value="电视剧 (网络剧)">电视剧 (网络剧)</option>
+                    <option value="电视剧 / 爱情">电视剧 / 爱情</option>
+                    <option value="电视剧SP">电视剧SP</option>
+                    <option value="电视剧集">电视剧集</option>
+                    <option value="电视电影">电视电影</option>
+                    <option value="短剧">短剧</option>
+                    <option value="短片">短片</option>
+                    <option value="纪录片">纪录片</option>
+                    <option value="纪录片 / 剧集">纪录片 / 剧集</option>
+                    <option value="纪录电影">纪录电影</option>
+                    <option value="综艺">综艺</option>
+                    <option value="综艺/真人秀">综艺/真人秀</option>
+                    <option value="网剧">网剧</option>
+                    <option value="网大">网大</option>
+                    <option value="网络剧">网络剧</option>
+                    <option value="网络剧 / 短剧">网络剧 / 短剧</option>
+                    <option value="网络电影">网络电影</option>
+                    <option value="网络短剧">网络短剧</option>
+                    <option value="迷你剧">迷你剧</option>
+                    </select>
+                    <select name="year" aria-label="选择年份">
+                        <option value="">全部年份</option>
+                    <option value="2029">2029</option>
+                    <option value="2028">2028</option>
+                    <option value="2027">2027</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                    <option value="1988">1988</option>
+                    <option value="1987">1987</option>
+                    <option value="1986">1986</option>
+                    <option value="1985">1985</option>
+                    <option value="1984">1984</option>
+                    <option value="1983">1983</option>
+                    <option value="1982">1982</option>
+                    <option value="1980">1980</option>
+                    <option value="1979">1979</option>
+                    <option value="1978">1978</option>
+                    <option value="1977">1977</option>
+                    <option value="1975">1975</option>
+                    <option value="1973">1973</option>
+                    <option value="1971">1971</option>
+                    <option value="1970">1970</option>
+                    <option value="1967">1967</option>
+                    <option value="1966">1966</option>
+                    <option value="1965">1965</option>
+                    <option value="1964">1964</option>
+                    <option value="1963">1963</option>
+                    <option value="1962">1962</option>
+                    <option value="1960">1960</option>
+                    <option value="1954">1954</option>
+                    <option value="1950">1950</option>
+                    <option value="1949">1949</option>
+                    <option value="1943">1943</option>
+                    <option value="1936">1936</option>
+                    <option value="1935">1935</option>
+                    </select>
+                </form>
+                <div class="search-results-note" data-search-note></div>
+                <div class="movie-grid" data-search-results>
+            <article class="movie-card" data-title="为此为止" data-region="中国香港" data-type="电影" data-year="2029" data-category="cinema">
+                <a href="./movie/1648.html" class="poster">
+                    <img src="./148.jpg" alt="为此为止">
+                    <span class="poster-badge">2029</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1648.html" class="movie-title">为此为止</a>
+                    <p class="movie-line">两大黑帮谈判，最后达成的共识是：杀了那个和事佬。</p>
+                    <div class="movie-meta">
+                        <span>中国香港</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国香港</span><span>电影</span><span>剧情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="见证" data-region="中国大陆" data-type="电影" data-year="2029" data-category="cinema">
+                <a href="./movie/0928.html" class="poster">
+                    <img src="./28.jpg" alt="见证">
+                    <span class="poster-badge">2029</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0928.html" class="movie-title">见证</a>
+                    <p class="movie-line">一个报社记者用相机见证了中国改革开放四十年，镜头里却永远没有他自己。</p>
+                    <div class="movie-meta">
+                        <span>中国大陆</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国大陆</span><span>电影</span><span>剧情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="沃特斯塔克" data-region="美国" data-type="纪录片" data-year="2029" data-category="global">
+                <a href="./movie/0100.html" class="poster">
+                    <img src="./100.jpg" alt="沃特斯塔克">
+                    <span class="poster-badge">2029</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0100.html" class="movie-title">沃特斯塔克</a>
+                    <p class="movie-line">揭秘“沃特斯塔克”音乐节背后的混乱、骗局与那一代人的乌托邦梦想。</p>
+                    <div class="movie-meta">
+                        <span>美国</span>
+                        <span>纪录片</span>
+                    </div>
+                    <div class="tag-list"><span>美国</span><span>纪录片</span><span>纪录</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="明月守护者" data-region="中国大陆" data-type="电影" data-year="2028" data-category="fantasy">
+                <a href="./movie/0714.html" class="poster">
+                    <img src="./114.jpg" alt="明月守护者">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0714.html" class="movie-title">明月守护者</a>
+                    <p class="movie-line">历代明月守护者只传男不传女，这一代的传人却是他的女儿。</p>
+                    <div class="movie-meta">
+                        <span>中国大陆</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国大陆</span><span>电影</span><span>奇幻</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="冤家兄弟" data-region="中国台湾" data-type="电影" data-year="2028" data-category="life">
+                <a href="./movie/0785.html" class="poster">
+                    <img src="./35.jpg" alt="冤家兄弟">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0785.html" class="movie-title">冤家兄弟</a>
+                    <p class="movie-line">势如水火的两兄弟在争夺父亲遗产的官司现场，发现遗嘱视频里父亲只说了一句：“去找你们同母异父的第三个兄弟。”</p>
+                    <div class="movie-meta">
+                        <span>中国台湾</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国台湾</span><span>电影</span><span>剧情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="卢西塔尼亚号的沉没" data-region="英国 / 加拿大" data-type="电影" data-year="2028" data-category="global">
+                <a href="./movie/1811.html" class="poster">
+                    <img src="./11.jpg" alt="卢西塔尼亚号的沉没">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1811.html" class="movie-title">卢西塔尼亚号的沉没</a>
+                    <p class="movie-line">泰坦尼克号之后的最大海难，一枚德国鱼雷不仅炸沉了巨轮，更炸醒了美国的孤立主义。</p>
+                    <div class="movie-meta">
+                        <span>英国 / 加拿大</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>英国 / 加拿大</span><span>电影</span><span>历史灾难</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="烈血焚城" data-region="中国大陆" data-type="电影" data-year="2028" data-category="hot">
+                <a href="./movie/1954.html" class="poster">
+                    <img src="./4.jpg" alt="烈血焚城">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1954.html" class="movie-title">烈血焚城</a>
+                    <p class="movie-line">核战废墟下，父亲为了给女儿找到一剂解药，必须独自穿越一座由疯狂军阀统治的辐射鬼城。</p>
+                    <div class="movie-meta">
+                        <span>中国大陆</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国大陆</span><span>电影</span><span>战争</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="爱情领域2" data-region="泰国" data-type="电视剧 / 爱情" data-year="2028" data-category="new">
+                <a href="./movie/1100.html" class="poster">
+                    <img src="./50.jpg" alt="爱情领域2">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1100.html" class="movie-title">爱情领域2</a>
+                    <p class="movie-line">足球社社长和美术系学弟互相暗恋却不敢表白，因为他们的哥哥曾是一对殉情的恋人。</p>
+                    <div class="movie-meta">
+                        <span>泰国</span>
+                        <span>电视剧 / 爱情</span>
+                    </div>
+                    <div class="tag-list"><span>泰国</span><span>电视剧 / 爱情</span><span>爱情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="女朋友1955" data-region="美国" data-type="电影" data-year="2028" data-category="romance">
+                <a href="./movie/0597.html" class="poster">
+                    <img src="./147.jpg" alt="女朋友1955">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0597.html" class="movie-title">女朋友1955</a>
+                    <p class="movie-line">1955年的保守小镇姑娘，爱上了来自2028年的、声称是“未来女友”的AI仿生人。</p>
+                    <div class="movie-meta">
+                        <span>美国</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>美国</span><span>电影</span><span>爱情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="杜拉拉升职记" data-region="中国大陆" data-type="电视剧" data-year="2028" data-category="asia">
+                <a href="./movie/0637.html" class="poster">
+                    <img src="./37.jpg" alt="杜拉拉升职记">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0637.html" class="movie-title">杜拉拉升职记</a>
+                    <p class="movie-line">杜拉拉升任HRD后，发现公司用AI监控员工大脑效率，而她自己也被算法标记为“待优化资产”。</p>
+                    <div class="movie-meta">
+                        <span>中国大陆</span>
+                        <span>电视剧</span>
+                    </div>
+                    <div class="tag-list"><span>中国大陆</span><span>电视剧</span><span>剧情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="余生—赛德克·巴莱" data-region="中国台湾" data-type="电影" data-year="2028" data-category="asia">
+                <a href="./movie/0002.html" class="poster">
+                    <img src="./2.jpg" alt="余生—赛德克·巴莱">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0002.html" class="movie-title">余生—赛德克·巴莱</a>
+                    <p class="movie-line">雾社事件幸存者被迁至川中岛后的余生，他们在屈辱与遗忘中，如何守护自己的彩虹桥信仰与文化火种。</p>
+                    <div class="movie-meta">
+                        <span>中国台湾</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国台湾</span><span>电影</span><span>历史</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="变脸英雄" data-region="中国大陆" data-type="电影" data-year="2028" data-category="mystery">
+                <a href="./movie/1593.html" class="poster">
+                    <img src="./93.jpg" alt="变脸英雄">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1593.html" class="movie-title">变脸英雄</a>
+                    <p class="movie-line">一名潜入犯罪组织的特工使用高科技变脸术，却发现自己替换的身份竟是组织的创始人。</p>
+                    <div class="movie-meta">
+                        <span>中国大陆</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国大陆</span><span>电影</span><span>动作</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="异象" data-region="美国" data-type="剧集" data-year="2028" data-category="drama">
+                <a href="./movie/0802.html" class="poster">
+                    <img src="./52.jpg" alt="异象">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0802.html" class="movie-title">异象</a>
+                    <p class="movie-line">全球各地同时出现天启异象，一群科学家发现它们竟是倒计时。</p>
+                    <div class="movie-meta">
+                        <span>美国</span>
+                        <span>剧集</span>
+                    </div>
+                    <div class="tag-list"><span>美国</span><span>剧集</span><span>科幻</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="冬天的女子" data-region="中国大陆" data-type="电影" data-year="2028" data-category="new">
+                <a href="./movie/1379.html" class="poster">
+                    <img src="./29.jpg" alt="冬天的女子">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1379.html" class="movie-title">冬天的女子</a>
+                    <p class="movie-line">冰封的松花江下埋藏着一具无名女尸，而城里三位同名女子都坚称自己才是死者。</p>
+                    <div class="movie-meta">
+                        <span>中国大陆</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>中国大陆</span><span>电影</span><span>剧情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="以父亲的名义" data-region="英国 / 爱尔兰" data-type="电影" data-year="2028" data-category="global">
+                <a href="./movie/0911.html" class="poster">
+                    <img src="./11.jpg" alt="以父亲的名义">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0911.html" class="movie-title">以父亲的名义</a>
+                    <p class="movie-line">儿子为被误判死刑的父亲翻案，却挖出了自己不愿面对的家族秘密。</p>
+                    <div class="movie-meta">
+                        <span>英国 / 爱尔兰</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>英国 / 爱尔兰</span><span>电影</span><span>剧情</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="火线掏宝" data-region="美国" data-type="电影" data-year="2028" data-category="comedy">
+                <a href="./movie/1394.html" class="poster">
+                    <img src="./44.jpg" alt="火线掏宝">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1394.html" class="movie-title">火线掏宝</a>
+                    <p class="movie-line">两个宅男从军火拍卖网站上低价买坦克，结果连海军陆战队都来找他们进货。</p>
+                    <div class="movie-meta">
+                        <span>美国</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>美国</span><span>电影</span><span>喜剧</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="平行的世界" data-region="美国" data-type="电影" data-year="2028" data-category="new">
+                <a href="./movie/0115.html" class="poster">
+                    <img src="./115.jpg" alt="平行的世界">
+                    <span class="poster-badge">2028</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0115.html" class="movie-title">平行的世界</a>
+                    <p class="movie-line">物理学家打开平行世界通道后，发现每个世界的自己都选择了不一样的爱人。</p>
+                    <div class="movie-meta">
+                        <span>美国</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>美国</span><span>电影</span><span>科幻</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="八角笼" data-region="美国" data-type="电视剧" data-year="2027" data-category="action">
+                <a href="./movie/0748.html" class="poster">
+                    <img src="./148.jpg" alt="八角笼">
+                    <span class="poster-badge">2027</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0748.html" class="movie-title">八角笼</a>
+                    <p class="movie-line">前UFC女拳手因过失杀人入狱，却在女子监狱的地下格斗场里，找到了重返赛场的唯一机会和最大的敌人。</p>
+                    <div class="movie-meta">
+                        <span>美国</span>
+                        <span>电视剧</span>
+                    </div>
+                    <div class="tag-list"><span>美国</span><span>电视剧</span><span>动作</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="太空竞赛" data-region="美国" data-type="电影" data-year="2027" data-category="new">
+                <a href="./movie/1616.html" class="poster">
+                    <img src="./116.jpg" alt="太空竞赛">
+                    <span class="poster-badge">2027</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1616.html" class="movie-title">太空竞赛</a>
+                    <p class="movie-line">为了争夺人类首个火星殖民地的巨额合同，四家宇航公司的太空舱在月球轨道发生碰撞，生还者必须在氧气耗尽前找出内鬼。</p>
+                    <div class="movie-meta">
+                        <span>美国</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>美国</span><span>电影</span><span>惊悚</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="孝庄秘史" data-region="中国大陆" data-type="剧集" data-year="2027" data-category="romance">
+                <a href="./movie/0612.html" class="poster">
+                    <img src="./12.jpg" alt="孝庄秘史">
+                    <span class="poster-badge">2027</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0612.html" class="movie-title">孝庄秘史</a>
+                    <p class="movie-line">重新演绎大玉儿从科尔沁少女到太皇太后的六十年传奇，这一次，她不再是帝王背后的女人。</p>
+                    <div class="movie-meta">
+                        <span>中国大陆</span>
+                        <span>剧集</span>
+                    </div>
+                    <div class="tag-list"><span>中国大陆</span><span>剧集</span><span>古装权谋</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="的士惊魂" data-region="香港" data-type="电影" data-year="2027" data-category="mystery">
+                <a href="./movie/0533.html" class="poster">
+                    <img src="./83.jpg" alt="的士惊魂">
+                    <span class="poster-badge">2027</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0533.html" class="movie-title">的士惊魂</a>
+                    <p class="movie-line">午夜搭上一辆的士后，乘客发现每经过一条隧道，司机就会换一张脸。</p>
+                    <div class="movie-meta">
+                        <span>香港</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>香港</span><span>电影</span><span>惊悚</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="出发吧唱游团" data-region="中国内地" data-type="综艺" data-year="2027" data-category="new">
+                <a href="./movie/1137.html" class="poster">
+                    <img src="./87.jpg" alt="出发吧唱游团">
+                    <span class="poster-badge">2027</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1137.html" class="movie-title">出发吧唱游团</a>
+                    <p class="movie-line">四位过气的60岁老牌歌手，开着改装房车环游中国，只为在每一个终点站办一场露天演唱会。</p>
+                    <div class="movie-meta">
+                        <span>中国内地</span>
+                        <span>综艺</span>
+                    </div>
+                    <div class="tag-list"><span>中国内地</span><span>综艺</span><span>音乐</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="美丽国度" data-region="北欧（虚构）" data-type="电视剧" data-year="2027" data-category="drama">
+                <a href="./movie/0352.html" class="poster">
+                    <img src="./52.jpg" alt="美丽国度">
+                    <span class="poster-badge">2027</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/0352.html" class="movie-title">美丽国度</a>
+                    <p class="movie-line">在一个由“美丽分数”决定一切的社会里，满分女神突然被扣了0.1分，瞬间从天堂坠入需要拼死求生的垃圾场。</p>
+                    <div class="movie-meta">
+                        <span>北欧（虚构）</span>
+                        <span>电视剧</span>
+                    </div>
+                    <div class="tag-list"><span>北欧（虚构）</span><span>电视剧</span><span>科幻</span></div>
+                </div>
+            </article>            <article class="movie-card" data-title="肉体的代价" data-region="波兰 / 捷克" data-type="电影" data-year="2027" data-category="hot">
+                <a href="./movie/1962.html" class="poster">
+                    <img src="./12.jpg" alt="肉体的代价">
+                    <span class="poster-badge">2027</span>
+                    
+                </a>
+                <div class="movie-card-body">
+                    <a href="./movie/1962.html" class="movie-title">肉体的代价</a>
+                    <p class="movie-line">奥斯维辛的纳粹军官强迫囚犯进行死亡拳击赛，输的人变成肥皂，赢的人获得两周生命。</p>
+                    <div class="movie-meta">
+                        <span>波兰 / 捷克</span>
+                        <span>电影</span>
+                    </div>
+                    <div class="tag-list"><span>波兰 / 捷克</span><span>电影</span><span>剧情</span></div>
+                </div>
+            </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a href="./index.html" class="footer-brand">高清亚洲视频</a>
+                <p>高清亚洲免费视频影视，满足你的所有幻想，高清流畅，给你沉浸式的观影体验！支持手机电脑多端播放，汇聚海量优质视频内容。</p>
+            </div>
+            <div>
+                <h3>快捷入口</h3>
+                <div class="footer-links">
+                    <a href="./movies.html">全部影片</a>
+                    <a href="./categories.html">分类总览</a>
+                    <a href="./rankings.html">热播排行</a>
+                    <a href="./search.html">搜索片库</a>
+                </div>
+            </div>
+            <div>
+                <h3>内容分类</h3>
+                <div class="footer-links footer-links-flow">
+                    <a href="./category/hot.html">热播精选</a>
+                    <a href="./category/new.html">新片速递</a>
+                    <a href="./category/cinema.html">电影大片</a>
+                    <a href="./category/drama.html">剧集追看</a>
+                    <a href="./category/asia.html">亚洲风尚</a>
+                    <a href="./category/global.html">海外视野</a>
+                    <a href="./category/mystery.html">悬疑迷雾</a>
+                    <a href="./category/romance.html">情感故事</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 高清亚洲视频</span>
+            <span>高清流畅 · 多端播放 · 海量内容</span>
+        </div>
+    </footer>
+    <script src="./assets/search-data.js"></script>
+    <script type="module" src="./assets/app.js"></script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
